@@ -15,6 +15,10 @@ app.set('view engine', 'handlebars');
 //setting static files
 app.use(express.static('public'));
 
+//Routes setting
+app.get('/', (req, res) => {
+  res.render('index', { restaurant: restaurantList });
+})
 
 
 //Start and listen to server
