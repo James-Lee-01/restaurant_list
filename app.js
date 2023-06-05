@@ -41,5 +41,5 @@ app.get('/search', (req, res) => {
 
 //Start and listen to server
 app.listen(port, () => {
-  console.log(`Express is listening on localhost:${port}`);
+  console.log(`Listening on localhost:${port}`);
 })
